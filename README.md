@@ -4,7 +4,9 @@ Step 1:  Uninstall the old dahdi drivers
 ******************************
 ssh the server via putty 
 First check the dahdi modules installed by running below command
-'''lsmod | grep dahdi
+```console
+lsmod | grep dahdi
+```
 
 you will get the below output 
 
@@ -13,9 +15,11 @@ you will get the below output
 
 Now uninstall all the modules which shown in above pic
 
-'''modprobe -r wctc4xxp wctdm24xxp wcte12xp xpp dahdi_transcode wcb4xxp
-'''modprobe -r wctdm wcfxo wctdm24xxp wcte11xp wct1xxp wcte12xp
-'''modprobe -r dahdi_voicebus wct4xxp wctdm24xxp dahdi
+```console
+modprobe -r wctc4xxp wctdm24xxp wcte12xp xpp dahdi_transcode wcb4xxp
+modprobe -r wctdm wcfxo wctdm24xxp wcte11xp wct1xxp wcte12xp
+modprobe -r dahdi_voicebus wct4xxp wctdm24xxp dahdi
+```
 
 
 
